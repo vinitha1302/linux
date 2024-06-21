@@ -1,0 +1,121 @@
+rps@rps-virtual-machine:~/linux1$ history
+    1  sudo apt update
+    2  sudo nano /etc/resolv.conf 
+    3  sudo apt update
+    4  sudo apt upgrade
+    5  sudo apt install gcc++
+    6  sudo apt install gcc
+    7  sudo apt install build-essentials
+    8  sudo apt install build-essential
+    9  sudo apt install gdb
+   10  init 0
+   11  gcc --version
+   12  cd "/home/rps/Desktop/C Demo/" && gcc first.c -o first && "/home/rps/Desktop/C Demo/"first
+   13  sudo su
+   14  tar xvfz node_exporter-1.7.0.linux-amd64.tar.gz 
+   15  cd node_exporter-1.7.0.linux-amd64/
+   16  sudo mv node_exporter /usr/local/bin/
+   17  sudo tee /etc/systemd/system/node_exporter.service<<EOF
+   18  [Unit]
+   19  Description=Node Exporter
+   20  After=network.target
+   21   
+   22  [Service]  
+   23  User=rps
+   24  Group=rps
+   25  Type=simple
+   26  ExecStart=/usr/local/bin/node_exporter
+   27   
+   28  [Install]
+   29  WantedBy=multi-user.target
+   30  EOF
+   31  sudo systemctl daemon-reload
+   32  sudo systemctl start node_exporter
+   33  sudo systemctl enable node_exporter
+   34  sudo systemctl status node_exporter
+   35  sudo apt install gcc
+   36  sudo apt install git
+   37  sudo apt install make
+   38  sudo apt install vim
+   39  sudo apt install g++
+   40  sudo apt install gedit
+   41  sudo apt install cmake
+   42  sudo apt install g++
+   43  df -h
+   44  sudo apt update
+   45  sudo apt upgrade
+   46  sudo reboot
+  109   ls
+  110  mkdir test
+  111  rmdir test
+  112  mkdir linux1
+  113  cd linux1
+  114  pwd
+  115  mkdir training
+  116  cd training
+  117  cat >file1.txt
+  118  cat file1.txt
+  119  cd..
+  120  cd ..
+  121  vi file2.txt
+  122  cat file2.txt
+  123  touch file3.txt
+  124  touch file4.txt file5.txt file6.txt
+  126  man ls
+  127  tldr ls
+  128  ls -1
+  129  ls -a
+  130  ls -la
+  131  ls -lh
+  132  ls -lS
+  133  ls -ltr
+  134  ls /bin
+  135  ls -al /bin
+  136  cd ../training 
+  137  mkdir flowers cars
+  138  cd linux1
+  139  mkdir -p fruits/orange
+  140  rmdir flowers cars
+  141  rm -rf flowers cars
+  142  touch test
+  143  mv pear new_pear
+  144  mv pear test
+  145  mv pear linux
+  146  touch pear
+  147  touch apple
+  148  mkdir fruits
+  149  mv pear apple fruits
+  150  touch test
+  151  cp apple another_apple
+  152  mkdir fruits
+  153  cp -r fruits cars
+  154  find . -name '*.js'
+  ln flowers fruits
+  157  history
+  158  gzip flowers
+  159  gzip fruits
+  160  gzip file1 file2
+  161  gunzip file2.txt
+  173  sort file1.txt
+  174  echo fruits
+  176  chmod fruits.txt
+  177  chmod 777 fruits.txt
+  178  history
+  179  wc -m file2.txt
+  181  du
+  182  df
+  183  dirname
+  184  pwd
+  185  dirname /home/rps/linux1
+  186  ps
+  187  top
+  188  jobs
+  189  bg
+  190  fg
+  191  which ls
+  192  nohup
+  193  ping www.google.com
+  194  history
+
+  
+  
